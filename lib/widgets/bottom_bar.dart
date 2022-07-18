@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animation/constants/global_variables.dart';
-import 'package:flutter_animation/screens/account_screen.dart';
-import 'package:flutter_animation/screens/cart_screen.dart';
-import 'package:flutter_animation/screens/home_screen.dart';
-import 'package:flutter_animation/screens/menu_screen.dart';
+import 'package:flutter_animation/screens/account/account_screen.dart';
+import 'package:flutter_animation/screens/cart/cart_screen.dart';
+import 'package:flutter_animation/screens/home/home_screen.dart';
+import 'package:flutter_animation/screens/menu/menu_screen.dart';
 
 class BottomBar extends StatefulWidget {
   const BottomBar({Key? key}) : super(key: key);
