@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animation/screens/home/widgets/app_bars.dart';
+import 'package:flutter_animation/screens/home/widgets/implicit_animation.dart';
+import 'package:flutter_animation/widgets/text_header.dart';
+import 'package:flutter_animation/screens/home/widgets/tween_animation.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -13,6 +16,18 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBarHome(context),
+      body: SingleChildScrollView(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            TextHeader(text: "Implicit Animations"),
+            ImplicitAnimations(),
+            SizedBox(height: 10),
+            TextHeader(text: "Tween Animations"),
+            TweenAnimation(),
+          ],
+        ),
+      ),
     );
   }
 }
