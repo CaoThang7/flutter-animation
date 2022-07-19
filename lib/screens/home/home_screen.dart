@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animation/screens/home/widgets/animated_positioned.dart';
 import 'package:flutter_animation/screens/home/widgets/app_bars.dart';
 import 'package:flutter_animation/screens/home/widgets/implicit_animation.dart';
 import 'package:flutter_animation/widgets/text_header.dart';
@@ -25,6 +26,9 @@ class _HomeScreenState extends State<HomeScreen> {
             SizedBox(height: 10),
             TextHeader(text: "Tween Animations"),
             TweenAnimation(),
+            TextHeader(text: "Animated Positioned"),
+            AnimatedPositionedd(),
+            SizedBox(height: 10),
           ],
         ),
       ),
