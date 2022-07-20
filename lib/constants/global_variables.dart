@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animation/models/product.dart';
 
 class GlobalVariables {
   // COLORS
@@ -20,3 +21,9 @@ class GlobalVariables {
   static const raidoTitleColor = Color(0xffFCF7F1);
   static const borderRadioColor = Color.fromARGB(255, 225, 194, 168);
 }
+
+List<Product> products = [
+  Product(color: Colors.black, path: 'assets/images/headphone1.jpg'),
+  Product(color: Colors.white, path: 'assets/images/headphone2.jpg'),
+  Product(color: const Color(0xFFFEE9EC), path: 'assets/images/headphone3.jpg'),
+];
